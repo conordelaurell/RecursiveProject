@@ -31,6 +31,34 @@ public class RecursiveProduct {
 			Scanner input = new Scanner(System.in);
 			
 			
+			int[] numbers = new int[5];
+			
+			
+			
+			System.out.println("Please eneter five numbers: ");
+			
+			
+			for (int i = 0; i< numbers.length; i++) {
+				
+				System.out.print("Number " + (i + 1) + ": ");
+				numbers[i] = input.nextInt();
+				
+				
+				
+				
+			}
+			
+			
+			
+			int product = calculateProduct(numbers, 0);
+			
+			
+			
+			
+			System.out.println("\nThe product of the five numbers is: " + product);
+			
+			
+			input.close();
 		}
 
 	}
